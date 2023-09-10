@@ -13,7 +13,33 @@
 .sucursales{
     display: flex;
     width: 80%;
+    animation-name: aparecerSucursales;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-direction: alternate;
 }
+
+@keyframes aparecerSucursales {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(-300px);
+        opacity: 0.5;
+    }
+    50% {
+        
+        opacity: 1;
+    }
+    100% {
+        
+    }
+}
+
 .suc {
    margin-top: 150px;   
 }

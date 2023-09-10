@@ -553,8 +553,28 @@ footer p {
 .sucursales {
   display: flex;
   width: 80%;
+  animation-name: aparecerSucursales;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-direction: alternate;
 }
 
+@keyframes aparecerSucursales {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(-300px);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 .suc {
   margin-top: 150px;
 }
@@ -650,11 +670,35 @@ footer p {
   padding-top: 30px;
 }
 
+#fxTituloContacto {
+  animation-name: aparecerTitulo;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes aparecerTitulo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(-200px);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 .containerContacto {
   padding-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
 .contactoForm {
