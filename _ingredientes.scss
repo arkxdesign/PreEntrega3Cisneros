@@ -1,0 +1,48 @@
+.backgroundIngredientes{
+    background-image: url(./img/bgIngredientes.jpg);
+    background-size: cover;
+    z-index: 0;
+}
+
+.containerIngredientes{
+    padding-top: 100px;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+}
+
+.nostraIngredientes{
+    width:100%;
+    float: left;
+}
+
+.nostraIngredientes div{
+    float: right;
+    width:48%;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding-right: 80px;
+}
+
+.nostraIngredientes div p{
+    text-align: left;
+    color: white;
+}
+
+.nostraIngredientes div h2{
+    font-family: 'Roboto', sans-serif;
+    color: orange;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left;    
+}
+
+@media (max-width: 992px) {
+    .nostraIngredientes div{
+        float: right;
+        width:100%;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        padding-left: 30px;
+    }
+}

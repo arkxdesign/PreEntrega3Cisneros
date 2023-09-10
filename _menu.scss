@@ -1,0 +1,97 @@
+
+.backgroundMenu{
+    width: 100%;
+    margin-top: -80px;
+    height: calc(70vh);
+    background-image: url(./img/bgMenu.jpg);
+    background-size: cover;
+    z-index: 0;
+}
+
+.backgroundMenu h1{
+    padding-top: 200px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.backgroundMenu p{
+    margin-top: -20px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.containerPreparadosMenu{
+    margin-top: 10px;
+}
+
+.menuPizzas{
+    width:90%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.imgMenu{
+    border-radius: 60px 10px 40px 20px;
+}
+
+.menuPizzas div{
+    margin-top: 5px;
+    padding-top: 30px;
+    padding-left: 50px;
+    margin-bottom: 5px;
+}
+
+.menuPizzas div p{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.menuPizzas div h2{
+    font-family: 'Roboto', sans-serif;
+    color: orange;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.menuPizzas div h3{
+    font-family: 'Roboto', sans-serif;
+    color: orange;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: right;
+}
+
+@media  (max-width: 768px) {
+    .imgMenu{
+        width: 100%;
+        height: auto;
+        border-radius: 40px 5px 20px 10px;
+    }
+    .menuPizzas{
+        width:100%;
+    }
+    .backgroundMenu{
+        width: 100%;
+        margin-top: -100px;
+        height: calc(70vh);
+        background-image: url(./img/bgMenu.jpg);
+        background-size: cover;
+        z-index: 0;
+    }
+    .containerPreparadosMenu{
+        position: relative;
+        margin-top: -100px;
+        z-index: 4;
+    }
+    .containerMenu{
+        position: relative;
+        margin-top: 0px;
+        z-index: 4;
+    }
+}
