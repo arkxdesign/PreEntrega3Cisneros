@@ -1,6 +1,5 @@
 .backgroundMenu{
     width: 100%;
-    margin-top: -80px;
     height: calc(70vh);
     background-image: url(./img/bgMenu.jpg);
     background-size: cover;
@@ -57,6 +56,7 @@
     }
 }
 #imgMenuFx{
+    margin-top: -100px;
     animation-name: aparecerMenu;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;

@@ -3,8 +3,10 @@
     background-size: cover;
     z-index: 0;
 }
+#containerIng{
+    margin-top: -100px;
+}
 .containerIngredientes{
-    padding-top: 100px;
     display: contents;
     justify-content: center;
     align-items: center;
@@ -32,6 +34,7 @@
     text-align: left;    
 }
 #fxAparacerIngredientes1{
+    margin-top: 100px;
     animation-name: aparecerIngredientes1;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;

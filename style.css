@@ -341,7 +341,6 @@ footer p {
 }
 .backgroundMenu {
   width: 100%;
-  margin-top: -80px;
   height: 70vh;
   background-image: url(./img/bgMenu.jpg);
   background-size: cover;
@@ -403,6 +402,7 @@ footer p {
   }
 }
 #imgMenuFx {
+  margin-top: -100px;
   animation-name: aparecerMenu;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
@@ -496,8 +496,11 @@ footer p {
   z-index: 0;
 }
 
+#containerIng {
+  margin-top: -100px;
+}
+
 .containerIngredientes {
-  padding-top: 100px;
   display: contents;
   justify-content: center;
   align-items: center;
@@ -530,6 +533,7 @@ footer p {
 }
 
 #fxAparacerIngredientes1 {
+  margin-top: 100px;
   animation-name: aparecerIngredientes1;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
@@ -631,7 +635,7 @@ footer p {
   }
 }
 .mainsucursales {
-  margin-top: -80px;
+  margin-top: -100px;
   height: 100vh;
   background-image: url(./img/bgSucursales.jpg);
   background-size: cover;
@@ -752,6 +756,10 @@ footer p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#containerContacto {
+  margin-top: -100px;
 }
 
 .backgroundMenu h1 {
