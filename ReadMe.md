@@ -1,5 +1,8 @@
 # 💫 About Me:
-🔭 Adrián Cisneros<br>👯 HTML y CSS + Bootstrap<br>🤝 Coder House<br>⚡ Entrega 2
+🔭 Adrián Cisneros<br>👯 HTML y CSS + Bootstrap<br>🤝 Coder House<br>⚡ PreEntrega 3
+
+Pre-entrega 3:
+Animaciones, Variables de color en CSS, SASS, Meta Description y Keywords.
 
 
 # 💻 Tech Stack:

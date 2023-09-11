@@ -3,19 +3,16 @@
     background-size: cover;
     z-index: 0;
 }
-
 .containerIngredientes{
     padding-top: 100px;
     display: contents;
     justify-content: center;
     align-items: center;
 }
-
 .nostraIngredientes{
     width:100%;
     float: left;
 }
-
 .nostraIngredientes div{
     float: right;
     width:48%;
@@ -23,20 +20,17 @@
     margin-bottom: 5px;
     padding-right: 80px;
 }
-
 .nostraIngredientes div p{
     text-align: left;
     color: white;
 }
-
 .nostraIngredientes div h2{
     font-family: 'Roboto', sans-serif;
-    color: orange;
+    color: var(--primaryColor);
     font-size: 22px;
     font-weight: 600;
     text-align: left;    
 }
-
 #fxAparacerIngredientes1{
     animation-name: aparecerIngredientes1;
     animation-iteration-count: 1;
@@ -44,7 +38,6 @@
     animation-duration: 2s;
     animation-direction: alternate;
 }
-
 @keyframes aparecerIngredientes1 {
     from{
         opacity: 0;
@@ -57,14 +50,11 @@
         opacity: 0.5;
     }
     50% {
-        
         opacity: 1;
     }
-    100% {
-        
+    100% {       
     }
 }
-
 #fxAparacerIngredientes2{
     animation-name: aparecerIngredientes2;
     animation-iteration-count: 1;
@@ -72,7 +62,6 @@
     animation-duration: 3s;
     animation-direction: alternate;
 }
-
 @keyframes aparecerIngredientes2 {
     from{
         opacity: 0;
@@ -84,15 +73,12 @@
         transform: translateX(-550px);
         opacity: 0.5;
     }
-    50% {
-        
+    50% {        
         opacity: 1;
     }
-    100% {
-        
+    100% {       
     }
 }
-
 #fxAparacerIngredientes3{
     animation-name: aparecerIngredientes3;
     animation-iteration-count: 1;
@@ -100,7 +86,6 @@
     animation-duration: 4s;
     animation-direction: alternate;
 }
-
 @keyframes aparecerIngredientes3 {
     from{
         opacity: 0;
@@ -120,7 +105,6 @@
         
     }
 }
-
 #fxAparacerIngredientes4{
     animation-name: aparecerIngredientes4;
     animation-iteration-count: 1;
@@ -128,7 +112,6 @@
     animation-duration: 5s;
     animation-direction: alternate;
 }
-
 @keyframes aparecerIngredientes4 {
     from{
         opacity: 0;
@@ -148,7 +131,6 @@
         
     }
 }
-
 @media (max-width: 992px) {
     .nostraIngredientes div{
         float: right;
