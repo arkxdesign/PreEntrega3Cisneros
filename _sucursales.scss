@@ -43,7 +43,32 @@
 }
 .imgSucursales{
     border-radius: 60px 10px 40px 20px;
-} 
+    animation-name: efectoImgSucursales;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+@keyframes efectoImgSucursales {
+    0% {
+        border-radius: 80px 20px 60px 40px;
+    }
+    25% {
+        border-radius: 100px 40px 80px 60px;
+        background-color: var(--terciaryColor);
+    }
+    50% {
+        border-radius: 20px 60px 100px 80px;        
+    }
+    75% {
+        border-radius: 40px 80px 20px 100px;
+        background-color: var(--terciaryColor);
+    }
+    100% {
+        border-radius: 60px 10px 40px 20px;
+    }
+}
 .suc p{
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -81,9 +106,9 @@
 }
 @media (max-width: 992px) {
     .mainsucursales{
-        height: auto;
+        margin-top: 50px;
         padding-top: 50px;
-        height: calc(100vh * 4);
+        height: auto;
         background-image: url(./img/bgSucursales.jpg);
         background-size: cover;
         z-index: 1;

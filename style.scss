@@ -1,32 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lisu+Bosa:ital,wght@0,300;1,200&family=Nabla&family=Roboto+Mono:wght@200&family=Roboto:wght@300&display=swap');
-
 :root {
     --primaryColor: orange;
     --secondaryColor: black;
     --terciaryColor: rgb(182, 120, 6);
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     background-color: black;
 }
-
 header{
     width: 100%;
     top: 0;
     height: 78px;
     z-index: 998;
 } 
-
 .bg-body-tertiary{
     background: #000000af !important;
 }
-
 .logo{
     float: left;
     margin-top: 10px;
@@ -35,27 +29,20 @@ header{
     height: 60px;
     width: auto;
  }
-
-
-
 .logo img{
     position: absolute;
     top: 10px;
     z-index: 999;
 }
-
 .menu{
     width: 100%;
 }
-
 .containerMenu{
     float: right;
 }
-
 .navbar{
     font-family: 'Roboto', sans-serif;
 }
-
 .navbar ul {
     list-style: none;
     font-size: 14px;
@@ -63,54 +50,44 @@ header{
     justify-content: space-evenly;
     margin-top: 30px;
 }
-
 .separatorMain{
     color: white;
     font-size: 20px;
     padding: 10px;
     margin-top: -15px;
 }
-
 .navbar a{
     text-decoration: none;
     color: white;
 }
-
 .navbar a:hover{
     color: var(--primaryColor);
     font-size: 16px;
     transform: scale(1.2, 1.2);
     transition: all 0.5s; 
 }
-
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(235, 174, 8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-  
 .navbar-toggler {
     border-color: var(--primaryColor);
 } 
-
 .navbar-collapse{
     width: 100% !important;    
     text-align: right !important;    
 }
-
 .show{
     text-align: right;
 }
-
 #mainTop{
     margin-top: -100px !important;
 }
-
 main{
     height: calc(100vh + 20px);
     background-image: url(./img/bgHome.jpg);
     background-size: cover;
     z-index: 1;
 }
-
 #fxContainer{
     animation-name: aparecer;
     animation-iteration-count: 1;
@@ -118,7 +95,6 @@ main{
     animation-duration: 5s;
     animation-direction: alternate;
 }
-
 @keyframes aparecer {
     from{
         opacity: 0;
@@ -137,13 +113,11 @@ main{
         width: 100%;
     }
 }
-
 main p{
     text-align: justify;
     font-family: 'Roboto', sans-serif;
     color: white;
 }
-
 .mainContainer{
     height: calc(100vh);
     display: flex;
@@ -151,20 +125,16 @@ main p{
     align-items: center;
     width: 100%;
 }
-
 .call{
    display: block;
    margin-top: 100px;
    margin-left: 40%;
    width: 50%;    
 }
-
 h1{
     font-family: 'Roboto', sans-serif;
     color: var(--primaryColor);
 }
-
-
 .call a{
     float: right;
     font-family: 'Roboto', sans-serif;
@@ -176,7 +146,6 @@ h1{
     padding: 10px 20px;
     border-radius: 60px 10px 40px 20px;
 }
-
 #botonFx{
     animation-name: efecto;
     animation-iteration-count: infinite;
@@ -184,7 +153,6 @@ h1{
     animation-duration: 5s;
     animation-direction: alternate;
 }
-
 @keyframes efecto {
     0% {
         border-radius: 80px 20px 60px 40px;
@@ -204,25 +172,20 @@ h1{
         border-radius: 60px 10px 40px 20px;
     }
 }
-
 .call a:hover{
     background-color: #36044d;
 }
-
 article{
     padding-top: 80px;
     width: 100%;
 }
-
 article:hover{
     transform: scale(1.2, 1.2);
     transition: all 1s; 
 }
-
 .flex{
     text-align: center;
-}
-  
+} 
 .flex p{
     margin-top: -10px;
     font-family: 'Roboto', sans-serif;
@@ -233,7 +196,6 @@ article:hover{
     font-size: 16px;
     font-weight: bold;
 }
-
 footer{
     margin-top: 100px;
     background-color: var(--secondaryColor);
@@ -242,29 +204,24 @@ footer{
     padding-right: 2rem;
     padding-bottom: 30px;
 }
-
 .footerColumna1{
     padding-top: 30px;
     text-align: left;
 }
-
 .footerColumna2{
     padding-top: 30px;
     text-align: left;
 }
-
 .footerColumna3{
     padding-top: 30px;
     text-align: right;
 }
-
 footer h3{
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size:larger;
     font-weight: 600;
 }
-
 footer ul{
     list-style: none;
     font-size: 12px;
@@ -272,26 +229,21 @@ footer ul{
     font-family: 'Roboto', sans-serif;
     color: white;
 }
-
 footer li{
     margin-left: -30px;
     padding-top: 10px !important;
 }
-
 footer ul li img{
     padding-right: 5px;
     margin-top: -10px;
 }
-
 footer a{
     text-decoration: none;
     color: white;
 }
-
 footer a:hover{
     color: var(--primaryColor);
 }
-
 footer p{
     padding-top: 90px;
     margin-bottom: 0px !important;
@@ -300,7 +252,6 @@ footer p{
     font-family: 'Roboto', sans-serif;
     color: white;
 }
-
 .subir{
     height: 40px;
     width: 40px;
@@ -315,7 +266,6 @@ footer p{
     box-shadow: 0 0 2px #ffffff;
     z-index: 2;
 }
-
 @media (max-width: 992px) {
     .separatorMain{
         display: none;
@@ -326,28 +276,44 @@ footer p{
         margin-left: 0%;
         width: 90%;    
      }
-}
-
-@media (max-width: 992px) {
     .navbar ul li{
         list-style: none;
         font-size: 15px;
         font-weight: bold;
         padding-top: 5px;
     }
-}
-
-@media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         padding-right: 50px;
     }
-}
-
-
-@media (max-width: 992px) {
     .footerColumna3{
         text-align: center;
     } 
+    #fxContainer{
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+        animation-direction: alternate;
+    }
+    
+    @keyframes aparecer {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+        0% {
+            width: 100%;
+            transform: translateY(-200px);
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            width: 100%;
+        }
+    }
 }
 
 @import "_menu";
