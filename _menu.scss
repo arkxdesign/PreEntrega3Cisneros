@@ -3,7 +3,6 @@
     height: calc(70vh);
     background-image: url(./img/bgMenu.jpg);
     background-size: cover;
-    z-index: 0;
 }
 .backgroundMenu h1{
     padding-top: 200px;
@@ -60,7 +59,7 @@
     animation-name: aparecerMenu;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-direction: alternate;
 }
 .menuPizzas div{
@@ -68,6 +67,7 @@
     padding-top: 30px;
     padding-left: 50px;
     margin-bottom: 5px;
+    z-index: 999;
 }
 .menuPizzas div p{
     text-align: left;
@@ -86,7 +86,7 @@
     animation-name: aparecerMenu;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-direction: alternate;
 }
 @keyframes aparecerMenu {
