@@ -1,6 +1,7 @@
 # 💫 About Me:
-🔭 Adrián Cisneros<br>👯 HTML y CSS + Bootstrap<br>🤝 Coder House<br>⚡ Entrega 2
+🔭 Adrián Cisneros<br>👯 HTML y CSS + Bootstrap<br>🤝 Coder House<br>⚡ PreEntrega 3
 
+Pre-entrega 3: Animaciones, Variables de color en CSS, SASS, Meta Description y Keywords.
 
 # 💻 Tech Stack:
 ![Adobe Illustrator](https://img.shields.io/badge/adobeillustrator-%23FF9A00.svg?style=for-the-badge&logo=adobeillustrator&logoColor=white) ![Adobe Photoshop](https://img.shields.io/badge/adobephotoshop-%2331A8FF.svg?style=for-the-badge&logo=adobephotoshop&logoColor=white)
