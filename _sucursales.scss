@@ -73,7 +73,7 @@
     animation-name: efectoImgSucursales2;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-direction: alternate;
 }
 
@@ -129,7 +129,7 @@
     animation-name: efectoImgSucursales4;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-direction: alternate;
 }
 
@@ -209,7 +209,16 @@
         margin-top: 0px;
     }
     .imgSucursales{
-       width: 90%;
+       width: 98%;
+    }
+    .imgSucursales2{
+       width: 98%;
+    }
+    .imgSucursales3{
+       width: 98%;
+    }
+    .imgSucursales4{
+       width: 98%;
     }
     .suc p{
         width: 90%;
