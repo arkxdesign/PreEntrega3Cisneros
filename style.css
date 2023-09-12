@@ -726,6 +726,90 @@ footer p {
     border-radius: 60px 10px 40px 20px;
   }
 }
+.imgSucursales2 {
+  border-radius: 60px 10px 40px 20px;
+  animation-name: efectoImgSucursales2;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+@keyframes efectoImgSucursales2 {
+  0% {
+    border-radius: 80px 20px 60px 40px;
+  }
+  25% {
+    border-radius: 100px 40px 80px 60px;
+    background-color: var(--terciaryColor);
+  }
+  50% {
+    border-radius: 40px 80px 20px 100px;
+  }
+  75% {
+    border-radius: 20px 60px 100px 80px;
+    background-color: var(--terciaryColor);
+  }
+  100% {
+    border-radius: 60px 10px 40px 20px;
+  }
+}
+.imgSucursales3 {
+  border-radius: 60px 10px 40px 20px;
+  animation-name: efectoImgSucursales3;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+@keyframes efectoImgSucursales3 {
+  0% {
+    border-radius: 20px 60px 100px 80px;
+  }
+  25% {
+    border-radius: 100px 40px 80px 60px;
+    background-color: var(--terciaryColor);
+  }
+  50% {
+    border-radius: 80px 20px 60px 40px;
+  }
+  75% {
+    border-radius: 40px 80px 20px 100px;
+    background-color: var(--terciaryColor);
+  }
+  100% {
+    border-radius: 60px 10px 40px 20px;
+  }
+}
+.imgSucursales4 {
+  border-radius: 60px 10px 40px 20px;
+  animation-name: efectoImgSucursales4;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+@keyframes efectoImgSucursales4 {
+  0% {
+    border-radius: 40px 80px 20px 100px;
+  }
+  25% {
+    border-radius: 100px 40px 80px 60px;
+    background-color: var(--terciaryColor);
+  }
+  50% {
+    border-radius: 20px 60px 100px 80px;
+  }
+  75% {
+    border-radius: 80px 20px 60px 40px;
+    background-color: var(--terciaryColor);
+  }
+  100% {
+    border-radius: 60px 10px 40px 20px;
+  }
+}
 .suc p {
   font-family: "Roboto", sans-serif;
   color: white;
