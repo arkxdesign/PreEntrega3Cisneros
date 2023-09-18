@@ -74,10 +74,19 @@ header{
 } 
 .navbar-collapse{
     width: 100% !important;    
-    text-align: right !important;    
+    text-align: right !important;
+        
 }
 .show{
-    text-align: right;
+    position: absolute;
+    top: 96px;
+    left: 0;
+    padding-bottom: 30px;
+    width: 100% !important;    
+    text-align: right !important;
+    background-image: url(./img/PizzaAugusta.png);
+    background-size: cover;
+    z-index: 9999;    
 }
 #mainTop{
     margin-top: -100px !important;
@@ -322,9 +331,20 @@ footer p{
     box-shadow: 0 0 2px #ffffff;
     z-index: 2;
 }
+@media (min-width: 993px) {
+    .BulletMainMobile{
+     display: none;
+    }
+}
 @media (max-width: 992px) {
     .separatorMain{
         display: none;
+    }
+    .BulletMainMobile{
+        width: 25px;
+        height: 20px;
+        margin-top: -11px;
+        padding-left: 10px;
     }
     .call{
         display: block;

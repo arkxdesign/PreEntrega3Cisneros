@@ -94,7 +94,15 @@ header {
 }
 
 .show {
-  text-align: right;
+  position: absolute;
+  top: 96px;
+  left: 0;
+  padding-bottom: 30px;
+  width: 100% !important;
+  text-align: right !important;
+  background-image: url(./img/PizzaAugusta.png);
+  background-size: cover;
+  z-index: 9999;
 }
 
 #mainTop {
@@ -368,9 +376,20 @@ footer p {
   z-index: 2;
 }
 
+@media (min-width: 993px) {
+  .BulletMainMobile {
+    display: none;
+  }
+}
 @media (max-width: 992px) {
   .separatorMain {
     display: none;
+  }
+  .BulletMainMobile {
+    width: 25px;
+    height: 20px;
+    margin-top: -11px;
+    padding-left: 10px;
   }
   .call {
     display: block;
@@ -458,6 +477,18 @@ footer p {
   width: 90%;
   justify-content: space-between;
   text-align: center;
+}
+.menuPizzas a {
+  float: right;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  background-color: var(--primaryColor);
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 60px 10px 40px 20px;
+  z-index: 3;
 }
 
 .imgMenu {
@@ -991,16 +1022,20 @@ footer p {
     margin-top: 0px;
   }
   .imgSucursales {
-    width: 98%;
+    width: 300px;
+    height: 300px;
   }
   .imgSucursales2 {
-    width: 98%;
+    width: 300px;
+    height: 300px;
   }
   .imgSucursales3 {
-    width: 98%;
+    width: 300px;
+    height: 300px;
   }
   .imgSucursales4 {
-    width: 98%;
+    width: 300px;
+    height: 300px;
   }
 }
 .col-12 {

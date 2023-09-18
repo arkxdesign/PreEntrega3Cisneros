@@ -35,6 +35,18 @@
     width:90%;
     justify-content: space-between;
     text-align: center;
+    a{
+        float: right;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        background-color: var(--primaryColor);
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-radius: 60px 10px 40px 20px;
+        z-index: 3;
+    }
 }
 .imgMenu{
     border-radius: 60px 10px 40px 20px;
