@@ -92,7 +92,7 @@ main{
     animation-name: aparecer;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 5s;
+    animation-duration: 1s;
     animation-direction: alternate;
 }
 @keyframes aparecer {
@@ -105,18 +105,21 @@ main{
     0% {
         width: 100%;
     }
+    1% {
+        transform: translateX(400px);
+        opacity: 1;
+    }
+    25% {
+        transform: translateX(400px);
+        opacity: 1;       
+    }
     50% {
-        transform: translateX(-200px);
-        opacity: 0.5;
+        transform: translateX(200px);
+        opacity: 1;
     }
     100% {
         width: 100%;
     }
-}
-main p{
-    text-align: justify;
-    font-family: 'Roboto', sans-serif;
-    color: white;
 }
 .mainContainer{
     height: calc(100vh);
@@ -125,15 +128,62 @@ main p{
     align-items: center;
     width: 100%;
 }
+main p{
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: white;
+}
 .call{
    display: block;
    margin-top: 100px;
    margin-left: 40%;
-   width: 50%;    
+   width: 50%;
+}
+#homeH1{
+    animation-name: aparecerH1;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.2s;
+    animation-direction: alternate;
+}
+@keyframes aparecerH1 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    0% {
+        transform: translateX(400px);
+    }
+    25% {
+        transform: translateX(400px);
+        color: #78a70c;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        z-index: 3;
+    }
+    75% {
+        transform: translateX(200px);
+        color: green;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+    }
+    100% {
+        width: 100%;
+        color: var(--primaryColor);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        z-index: 3;
+    }
 }
 h1{
     font-family: 'Roboto', sans-serif;
     color: var(--primaryColor);
+    font-weight: 900;
+    z-index: 3;
 }
 .call a{
     float: right;
@@ -145,6 +195,7 @@ h1{
     text-transform: uppercase;
     padding: 10px 20px;
     border-radius: 60px 10px 40px 20px;
+    z-index: 3;
 }
 #botonFx{
     animation-name: efecto;
@@ -152,6 +203,7 @@ h1{
     animation-timing-function: ease-in;
     animation-duration: 5s;
     animation-direction: alternate;
+    z-index: 3;
 }
 @keyframes efecto {
     0% {
@@ -174,6 +226,7 @@ h1{
 }
 .call a:hover{
     background-color: #36044d;
+    z-index: 3;
 }
 article{
     padding-top: 80px;
@@ -182,6 +235,9 @@ article{
 article:hover{
     transform: scale(1.2, 1.2);
     transition: all 1s; 
+}
+.container-fluid{
+    overflow: hidden;
 }
 .flex{
     text-align: center;
@@ -320,3 +376,4 @@ footer p{
 @import "_ingredientes";
 @import "_sucursales";
 @import "_contacto";
+@import "_buscador";
