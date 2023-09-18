@@ -7,7 +7,13 @@
     animation-direction: alternate;
     z-index: 999;
 }
-
+.backgroundMenu{
+    padding-top: 50px;
+    width: 100%;
+    height: 500px;
+    background-image: url(./img/bgMenu.jpg);
+    background-size: cover;
+}
 .backgroundMenu h1{
     padding-top: 200px;
     text-align: center;
