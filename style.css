@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lisu+Bosa:ital,wght@0,300;1,200&family=Nabla&family=Roboto+Mono:wght@200&family=Roboto:wght@300&display=swap");
-:root {
-  --primaryColor: orange;
-  --secondaryColor: black;
-  --terciaryColor: rgb(182, 120, 6);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -25,8 +19,7 @@ header {
 .bg-body-tertiary {
   background: rgba(0, 0, 0, 0.6862745098) !important;
 }
-
-.logo {
+.bg-body-tertiary .logo {
   float: left;
   margin-top: 10px;
   margin-left: 1rem;
@@ -34,25 +27,21 @@ header {
   height: 60px;
   width: auto;
 }
-
-.logo img {
+.bg-body-tertiary .logo img {
   position: absolute;
   top: 10px;
   z-index: 999;
 }
-
-.menu {
+.bg-body-tertiary .menu {
   width: 100%;
 }
-
-.containerMenu {
+.bg-body-tertiary .menu .containerMenu {
   float: right;
 }
 
 .navbar {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "sans-serif";
 }
-
 .navbar ul {
   list-style: none;
   font-size: 14px;
@@ -60,24 +49,21 @@ header {
   justify-content: space-evenly;
   margin-top: 30px;
 }
-
-.separatorMain {
-  color: white;
-  font-size: 20px;
-  padding: 10px;
-  margin-top: -15px;
-}
-
 .navbar a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
-
 .navbar a:hover {
-  color: var(--primaryColor);
+  color: orange;
   font-size: 16px;
   transform: scale(1.2, 1.2);
   transition: all 0.5s;
+}
+.navbar .separatorMain {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 10px;
+  margin-top: -15px;
 }
 
 .navbar-toggler-icon {
@@ -85,7 +71,7 @@ header {
 }
 
 .navbar-toggler {
-  border-color: var(--primaryColor);
+  border-color: orange;
 }
 
 .navbar-collapse {
@@ -160,10 +146,10 @@ main {
 
 main p {
   text-align: justify;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "sans-serif";
   font-size: 21px;
   font-weight: 600;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .call {
@@ -194,37 +180,37 @@ main p {
   25% {
     transform: translateX(400px);
     color: rgb(128, 19, 0);
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "sans-serif";
     font-weight: 900;
     z-index: 3;
   }
   75% {
     transform: translateX(200px);
     color: rgb(128, 19, 0);
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "sans-serif";
     font-weight: 900;
   }
   100% {
     width: 100%;
-    color: var(--primaryColor);
-    font-family: "Roboto", sans-serif;
+    color: orange;
+    font-family: "Roboto", "sans-serif";
     font-weight: 900;
     z-index: 3;
   }
 }
-h1 {
-  font-family: "Roboto", sans-serif;
-  color: var(--primaryColor);
+h1, .backgroundMenu h1 {
+  font-family: "Roboto", "sans-serif";
+  color: orange;
   font-weight: 900;
   z-index: 3;
 }
 
 .call a {
   float: right;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "sans-serif";
   font-weight: 600;
-  background-color: var(--primaryColor);
-  color: #ffffff;
+  background-color: orange;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-transform: uppercase;
   padding: 10px 20px;
@@ -247,14 +233,14 @@ h1 {
   }
   25% {
     border-radius: 100px 40px 80px 60px;
-    background-color: var(--terciaryColor);
+    background-color: rgb(182, 120, 6);
   }
   50% {
     border-radius: 20px 60px 100px 80px;
   }
   75% {
     border-radius: 40px 80px 20px 100px;
-    background-color: var(--terciaryColor);
+    background-color: rgb(182, 120, 6);
   }
   100% {
     border-radius: 60px 10px 40px 20px;
@@ -285,8 +271,8 @@ article:hover {
 
 .flex p {
   margin-top: -10px;
-  font-family: "Roboto", sans-serif;
-  color: white;
+  font-family: "Roboto", "sans-serif";
+  color: rgb(255, 255, 255);
   text-align: center;
   align-items: center;
   width: 100%;
@@ -295,12 +281,15 @@ article:hover {
 }
 
 footer {
+  position: static;
+  bottom: 0;
   margin-top: 100px;
-  background-color: var(--secondaryColor);
-  color: #ffffff;
+  background-color: black;
+  color: rgb(255, 255, 255);
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 30px;
+  z-index: 2;
 }
 
 .footerColumna1 {
@@ -319,8 +308,8 @@ footer {
 }
 
 footer h3 {
-  font-family: "Roboto", sans-serif;
-  color: white;
+  font-family: "Roboto", "sans-serif";
+  color: rgb(255, 255, 255);
   font-size: larger;
   font-weight: 600;
 }
@@ -329,8 +318,8 @@ footer ul {
   list-style: none;
   font-size: 12px;
   justify-content: space-evenly;
-  font-family: "Roboto", sans-serif;
-  color: white;
+  font-family: "Roboto", "sans-serif";
+  color: rgb(255, 255, 255);
 }
 
 footer li {
@@ -345,11 +334,11 @@ footer ul li img {
 
 footer a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 footer a:hover {
-  color: var(--primaryColor);
+  color: orange;
 }
 
 footer p {
@@ -357,22 +346,22 @@ footer p {
   margin-bottom: 0px !important;
   font-size: 11px !important;
   justify-content: space-evenly;
-  font-family: "Roboto", sans-serif;
-  color: white;
+  font-family: "Roboto", "sans-serif";
+  color: rgb(255, 255, 255);
 }
 
 .subir {
   height: 40px;
   width: 40px;
   background-color: rgba(255, 168, 0, 0.3);
-  color: var(--primaryColor);
+  color: orange;
   position: fixed;
   bottom: 60px;
   right: 10px;
   text-align: center;
   line-height: 40px;
   font-size: 28px;
-  box-shadow: 0 0 2px #ffffff;
+  box-shadow: 0 0 2px rgb(255, 255, 255);
   z-index: 2;
 }
 
@@ -436,7 +425,6 @@ footer p {
   }
 }
 #containerTitle {
-  z-index: 1;
   animation-name: aparecerMenu;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
@@ -446,31 +434,31 @@ footer p {
 }
 
 .backgroundMenu {
+  position: absolute;
+  top: 0;
   padding-top: 50px;
   width: 100%;
   height: 500px;
   background-image: url(./img/bgMenu.jpg);
   background-size: cover;
+  z-index: 1;
 }
 
 .backgroundMenu h1 {
   padding-top: 200px;
   text-align: center;
-  font-size: 80px;
-  font-weight: 600;
-  font-family: "Roboto", sans-serif;
 }
 
 .backgroundMenu p {
   margin-top: -20px;
   text-align: center;
   font-size: 24px;
-  font-family: "Roboto", sans-serif;
-  color: white;
+  font-family: "Roboto", "sans-serif";
+  color: rgb(255, 255, 255);
 }
 
 .containerPreparadosMenu {
-  margin-top: 10px;
+  margin-top: 400px;
 }
 
 .menuPizzas {
@@ -480,10 +468,10 @@ footer p {
 }
 .menuPizzas a {
   float: right;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "sans-serif";
   font-weight: 600;
-  background-color: var(--primaryColor);
-  color: #ffffff;
+  background-color: orange;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-transform: uppercase;
   padding: 10px 20px;
@@ -508,14 +496,14 @@ footer p {
   }
   25% {
     border-radius: 100px 40px 80px 60px;
-    background-color: var(--terciaryColor);
+    background-color: rgb(182, 120, 6);
   }
   50% {
     border-radius: 20px 60px 100px 80px;
   }
   75% {
     border-radius: 40px 80px 20px 100px;
-    background-color: var(--terciaryColor);
+    background-color: rgb(182, 120, 6);
   }
   100% {
     border-radius: 60px 10px 40px 20px;
@@ -546,13 +534,13 @@ footer p {
 
 .menuPizzas div p {
   text-align: left;
-  font-family: "Roboto", sans-serif;
-  color: white;
+  font-family: "Roboto", "sans-serif";
+  color: rgb(255, 255, 255);
 }
 
 .menuPizzas div h2 {
-  font-family: "Roboto", sans-serif;
-  color: var(--primaryColor);
+  font-family: "Roboto", "sans-serif";
+  color: orange;
   font-size: 22px;
   text-align: left;
   font-weight: 600;
@@ -582,14 +570,14 @@ footer p {
   }
 }
 .menuPizzas div h3 {
-  font-family: "Roboto", sans-serif;
-  color: var(--primaryColor);
+  font-family: "Roboto", "sans-serif";
+  color: orange;
   font-size: 22px;
   font-weight: 600;
   text-align: right;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .imgMenu {
     width: 100%;
     height: auto;
@@ -610,9 +598,7 @@ footer p {
     line-height: 23pt;
   }
   .containerPreparadosMenu {
-    position: relative;
-    top: 0px;
-    z-index: 999;
+    margin-top: 200px;
   }
   .containerMenu {
     position: relative;
@@ -620,27 +606,20 @@ footer p {
     z-index: 2;
   }
 }
-.backgroundIngredientes {
+.containerIngredientes {
+  position: relative;
+  margin-top: -100px;
+  padding-top: 100px;
+  width: 100%;
   background-image: url(./img/bgIngredientes.jpg);
   background-size: cover;
-  z-index: 0;
-}
-
-#containerIng {
-  margin-top: -100px;
-}
-
-.containerIngredientes {
-  display: contents;
-  justify-content: center;
-  align-items: center;
+  z-index: 1;
 }
 
 .nostraIngredientes {
   width: 100%;
   float: left;
 }
-
 .nostraIngredientes div {
   float: right;
   width: 48%;
@@ -648,22 +627,20 @@ footer p {
   margin-bottom: 5px;
   padding-right: 80px;
 }
-
 .nostraIngredientes div p {
   text-align: left;
-  color: white;
+  color: rgb(255, 255, 255);
 }
-
 .nostraIngredientes div h2 {
-  font-family: "Roboto", sans-serif;
-  color: var(--primaryColor);
+  font-family: "Roboto", "sans-serif";
+  color: orange;
   font-size: 22px;
   font-weight: 600;
   text-align: left;
 }
 
 #fxAparacerIngredientes1 {
-  margin-top: 100px;
+  margin-top: 50px;
   animation-name: aparecerIngredientes1;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
@@ -770,6 +747,10 @@ footer p {
   background-image: url(./img/bgSucursales.jpg);
   background-size: cover;
   z-index: 1;
+  width: 100%;
+}
+
+.containersucursales {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -824,14 +805,14 @@ footer p {
   }
   25% {
     border-radius: 100px 40px 80px 60px;
-    background-color: var(--terciaryColor);
+    background-color: rgb(182, 120, 6);
   }
   50% {
     border-radius: 20px 60px 100px 80px;
   }
   75% {
     border-radius: 40px 80px 20px 100px;
-    background-color: var(--terciaryColor);
+    background-color: rgb(182, 120, 6);
   }
   100% {
     border-radius: 60px 10px 40px 20px;
@@ -852,14 +833,14 @@ footer p {
   }
   25% {
     border-radius: 100px 40px 80px 60px;
-    background-color: var(--terciaryColor);
+    background-color: rgb(182, 120, 6);
   }
   50% {
     border-radius: 40px 80px 20px 100px;
   }
   75% {
     border-radius: 20px 60px 100px 80px;
-    background-color: var(--terciaryColor);
+    background-color: rgb(182, 120, 6);
   }
   100% {
     border-radius: 60px 10px 40px 20px;
@@ -880,14 +861,14 @@ footer p {
   }
   25% {
     border-radius: 100px 40px 80px 60px;
-    background-color: var(--terciaryColor);
+    background-color: rgb(182, 120, 6);
   }
   50% {
     border-radius: 80px 20px 60px 40px;
   }
   75% {
     border-radius: 40px 80px 20px 100px;
-    background-color: var(--terciaryColor);
+    background-color: rgb(182, 120, 6);
   }
   100% {
     border-radius: 60px 10px 40px 20px;
@@ -908,30 +889,30 @@ footer p {
   }
   25% {
     border-radius: 100px 40px 80px 60px;
-    background-color: var(--terciaryColor);
+    background-color: rgb(182, 120, 6);
   }
   50% {
     border-radius: 20px 60px 100px 80px;
   }
   75% {
     border-radius: 80px 20px 60px 40px;
-    background-color: var(--terciaryColor);
+    background-color: rgb(182, 120, 6);
   }
   100% {
     border-radius: 60px 10px 40px 20px;
   }
 }
 .suc p {
-  font-family: "Roboto", sans-serif;
-  color: white;
+  font-family: "Roboto", "sans-serif";
+  color: rgb(255, 255, 255);
   text-align: left;
   width: 188px;
 }
 
 .suc ul {
   list-style: none;
-  font-family: "Roboto", sans-serif;
-  color: white;
+  font-family: "Roboto", "sans-serif";
+  color: rgb(255, 255, 255);
 }
 
 .suc ul li {
@@ -948,18 +929,18 @@ footer p {
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
-  color: var(--primaryColor);
+  color: orange;
 }
 
 .suc a:hover {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .suc p {
   font-size: 14px !important;
   justify-content: space-evenly;
-  font-family: "Roboto", sans-serif;
-  color: white;
+  font-family: "Roboto", "sans-serif";
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width: 992px) {
@@ -1001,14 +982,15 @@ footer p {
 }
 @media (max-width: 768px) {
   .mainsucursales {
-    margin-top: 50px;
-    padding-top: 50px;
+    margin-top: -100px;
+    padding-top: 250px;
     height: auto;
     background-image: url(./img/bgSucursales.jpg);
     background-size: cover;
     z-index: 1;
-    justify-content: center;
-    align-items: center;
+  }
+  .containersucursales {
+    width: 100%;
   }
   .sucursales {
     margin-top: -100px;
@@ -1081,7 +1063,7 @@ footer p {
   }
 }
 .containerContacto {
-  padding-top: 0px;
+  padding-top: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1101,9 +1083,9 @@ input {
   width: 400px;
   height: 30px;
   margin-bottom: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "sans-serif";
   font-size: 12px;
-  color: var(--secondaryColor);
+  color: black;
   font-weight: bold;
 }
 
@@ -1111,7 +1093,7 @@ textarea {
   width: 400px;
   height: 121px;
   margin-bottom: -14px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "sans-serif";
   font-size: 12px;
   color: black;
   font-weight: bold;
@@ -1119,8 +1101,8 @@ textarea {
 
 button {
   float: right;
-  background-color: var(--primaryColor);
-  color: white;
+  background-color: orange;
+  color: rgb(255, 255, 255);
   padding: 10px 20px;
   border-radius: 60px 10px 40px 20px;
 }
@@ -1148,6 +1130,14 @@ button:hover {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .containerContacto {
+    position: relative;
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
   .contactoForm {
     margin-top: 0px;
   }
@@ -1158,9 +1148,9 @@ button:hover {
     width: 100%;
     height: 30px;
     margin-bottom: 10px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "sans-serif";
     font-size: 12px;
-    color: var(--secondaryColor);
+    color: black;
     font-weight: bold;
     border-radius: 5px;
   }
@@ -1169,52 +1159,11 @@ button:hover {
     width: 100%;
     height: 100px;
     margin-bottom: 10px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "sans-serif";
     font-size: 12px;
     font-weight: bold;
   }
   button {
     margin-right: 20px;
   }
-}
-#bgBuscador {
-  background-image: url(./img/bgIngredientes.jpg) !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  height: 300px;
-}
-
-.containerBuscador {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.buscador {
-  display: flex;
-}
-.buscador input {
-  height: 50px;
-  z-index: 1;
-  border-radius: 20px;
-  text-align: center;
-  font-size: 20px;
-}
-.buscador .aButtom {
-  position: relative;
-  right: 40px;
-  z-index: 2;
-  margin-top: 5px;
-}
-.buscador .aButtom img {
-  position: absolute;
-  width: 30px;
-}
-.buscador .aButtom img:hover {
-  position: absolute;
-  width: 32px;
-  height: auto;
 }/*# sourceMappingURL=style.css.map */

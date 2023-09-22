@@ -4,6 +4,9 @@
     background-image: url(./img/bgSucursales.jpg);
     background-size: cover;
     z-index: 1;
+    width: 100%; 
+}
+.containersucursales{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +45,7 @@
     width: 100%;    
 }
 .imgSucursales{
-    border-radius: 60px 10px 40px 20px;
+    @include borderRadius(60px 10px 40px 20px);
     animation-name: efectoImgSucursales;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
@@ -51,25 +54,25 @@
 }
 @keyframes efectoImgSucursales {
     0% {
-        border-radius: 80px 20px 60px 40px;
+        @include borderRadius(80px 20px 60px 40px);
     }
     25% {
-        border-radius: 100px 40px 80px 60px;
-        background-color: var(--terciaryColor);
+        @include borderRadius(100px 40px 80px 60px);
+        background-color: ($terciaryColor);
     }
     50% {
-        border-radius: 20px 60px 100px 80px;        
+        @include borderRadius(20px 60px 100px 80px);        
     }
     75% {
-        border-radius: 40px 80px 20px 100px;
-        background-color: var(--terciaryColor);
+        @include borderRadius(40px 80px 20px 100px);
+        background-color: ($terciaryColor);
     }
     100% {
-        border-radius: 60px 10px 40px 20px;
+        @include borderRadius(60px 10px 40px 20px);
     }
 }
 .imgSucursales2{
-    border-radius: 60px 10px 40px 20px;
+    @include borderRadius(60px 10px 40px 20px);
     animation-name: efectoImgSucursales2;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
@@ -79,25 +82,25 @@
 
 @keyframes efectoImgSucursales2 {
     0% {
-        border-radius: 80px 20px 60px 40px;
+        @include borderRadius(80px 20px 60px 40px);
     }
     25% {
-        border-radius: 100px 40px 80px 60px;
-        background-color: var(--terciaryColor);
+        @include borderRadius(100px 40px 80px 60px);
+        background-color: ($terciaryColor);
     }
     50% {
-        border-radius: 40px 80px 20px 100px;
+        @include borderRadius(40px 80px 20px 100px);
     }
     75% {
-        border-radius: 20px 60px 100px 80px;        
-        background-color: var(--terciaryColor);
+        @include borderRadius(20px 60px 100px 80px);        
+        background-color: ($terciaryColor);
     }
     100% {
-        border-radius: 60px 10px 40px 20px;
+        @include borderRadius(60px 10px 40px 20px);
     }
 }
 .imgSucursales3{
-    border-radius: 60px 10px 40px 20px;
+    @include borderRadius(60px 10px 40px 20px);
     animation-name: efectoImgSucursales3;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
@@ -107,25 +110,25 @@
 
 @keyframes efectoImgSucursales3 {
     0% {
-        border-radius: 20px 60px 100px 80px; 
+        @include borderRadius(20px 60px 100px 80px); 
     }
     25% {
-        border-radius: 100px 40px 80px 60px;
-        background-color: var(--terciaryColor);
+        @include borderRadius(100px 40px 80px 60px);
+        background-color: ($terciaryColor);
     }
     50% {
-        border-radius: 80px 20px 60px 40px;               
+        @include borderRadius(80px 20px 60px 40px);               
     }
     75% {
-        border-radius: 40px 80px 20px 100px;
-        background-color: var(--terciaryColor);
+        @include borderRadius(40px 80px 20px 100px);
+        background-color: ($terciaryColor);
     }
     100% {
-        border-radius: 60px 10px 40px 20px;
+        @include borderRadius(60px 10px 40px 20px);
     }
 }
 .imgSucursales4{
-    border-radius: 60px 10px 40px 20px;
+    @include borderRadius(60px 10px 40px 20px);
     animation-name: efectoImgSucursales4;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
@@ -135,33 +138,33 @@
 
 @keyframes efectoImgSucursales4 {
     0% {
-        border-radius: 40px 80px 20px 100px;
+        @include borderRadius(40px 80px 20px 100px);
     }
     25% {
-        border-radius: 100px 40px 80px 60px;
-        background-color: var(--terciaryColor);
+        @include borderRadius(100px 40px 80px 60px);
+        background-color: ($terciaryColor);
     }
     50% {
-        border-radius: 20px 60px 100px 80px;        
+        @include borderRadius(20px 60px 100px 80px);        
     }
     75% {
-        border-radius: 80px 20px 60px 40px;
-        background-color: var(--terciaryColor);
+        @include borderRadius(80px 20px 60px 40px);
+        background-color: ($terciaryColor);
     }
     100% {
-        border-radius: 60px 10px 40px 20px;
+        @include borderRadius(60px 10px 40px 20px);
     }
 }
 .suc p{
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    font-family: $primaryFont;
+    color: ($pColor1);
     text-align: left;
     width: 188px;
 }
 .suc ul{
     list-style: none;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    font-family: $primaryFont;
+    color: ($pColor1);
 }
 .suc ul li{
     padding-top: 20px;
@@ -176,16 +179,16 @@
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    color: var(--primaryColor);
+    color: ($primaryColor);
 }
 .suc a:hover{
-    color: white;
+    color: ($pColor1);
 }
 .suc p{
     font-size: 14px !important;
     justify-content: space-evenly;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    font-family: $primaryFont;
+    color: ($pColor1);
 }
 @media (max-width: 992px) {
     .mainsucursales{
@@ -227,14 +230,23 @@
 
 @media (max-width: 768px) {
     .mainsucursales{
-        margin-top: 50px;
-        padding-top: 50px;
+        margin-top: -100px;
+        padding-top: 250px;
         height: auto;
         background-image: url(./img/bgSucursales.jpg);
         background-size: cover;
         z-index: 1;
-        justify-content: center;
-        align-items: center;    
+    }
+    // .mainsucursales{
+    //     margin-top: -100px;
+    //     height: calc(100vh);
+    //     background-image: url(./img/bgSucursales.jpg);
+    //     background-size: cover;
+    //     z-index: 1;
+    //     width: 100%; 
+    // }
+    .containersucursales{
+        width: 100%; 
     }
     .sucursales{
         margin-top: -100px;

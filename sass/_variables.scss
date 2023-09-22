@@ -1,0 +1,13 @@
+//Colors
+$primaryColor: orange;
+$secondaryColor: black;
+$terciaryColor: rgb(182, 120, 6);
+$pColor1: rgb(255, 255, 255);
+
+//Font
+$primaryFont: 'Roboto', 'sans-serif';
+
+//Mixins
+@mixin borderRadius($radius){
+    border-radius: $radius;
+}

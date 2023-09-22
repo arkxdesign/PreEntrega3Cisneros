@@ -1,40 +1,39 @@
-.backgroundIngredientes{
+// #backgroundIngredientes{
+    
+// }
+.containerIngredientes{
+    position: relative;
+    margin-top: -100px;
+    padding-top: 100px;
+    width: 100%;
     background-image: url(./img/bgIngredientes.jpg);
     background-size: cover;
-    z-index: 0;
-}
-#containerIng{
-    margin-top: -100px;
-}
-.containerIngredientes{
-    display: contents;
-    justify-content: center;
-    align-items: center;
+    z-index: 1;
 }
 .nostraIngredientes{
     width:100%;
     float: left;
-}
-.nostraIngredientes div{
-    float: right;
-    width:48%;
-    margin-top: 30px;
-    margin-bottom: 5px;
-    padding-right: 80px;
-}
-.nostraIngredientes div p{
-    text-align: left;
-    color: white;
-}
-.nostraIngredientes div h2{
-    font-family: 'Roboto', sans-serif;
-    color: var(--primaryColor);
-    font-size: 22px;
-    font-weight: 600;
-    text-align: left;    
+    div{
+        float: right;
+        width:48%;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        padding-right: 80px;
+        p{
+            text-align: left;
+            color: ($pColor1);
+        }
+        h2{
+            font-family: $primaryFont;
+            color: ($primaryColor);
+            font-size: 22px;
+            font-weight: 600;
+            text-align: left;    
+        }
+    }
 }
 #fxAparacerIngredientes1{
-    margin-top: 100px;
+    margin-top: 50px;
     animation-name: aparecerIngredientes1;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;

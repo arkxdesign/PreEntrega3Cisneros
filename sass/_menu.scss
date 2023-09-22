@@ -1,5 +1,4 @@
 #containerTitle{
-    z-index: 1;
     animation-name: aparecerMenu;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -8,28 +7,30 @@
     z-index: 999;
 }
 .backgroundMenu{
+    position: absolute;
+    top: 0;
     padding-top: 50px;
     width: 100%;
     height: 500px;
     background-image: url(./img/bgMenu.jpg);
     background-size: cover;
+    z-index: 1;
 }
+//aplicando Extend a los H1
 .backgroundMenu h1{
+    @extend h1;
     padding-top: 200px;
     text-align: center;
-    font-size: 80px;
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
 }
 .backgroundMenu p{
     margin-top: -20px;
     text-align: center;
     font-size: 24px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    font-family: $primaryFont;
+    color: ($pColor1);
 }
 .containerPreparadosMenu{
-    margin-top: 10px;
+    margin-top: 400px;
 }
 .menuPizzas{
     width:90%;
@@ -37,19 +38,20 @@
     text-align: center;
     a{
         float: right;
-        font-family: 'Roboto', sans-serif;
+        font-family: $primaryFont;
         font-weight: 600;
-        background-color: var(--primaryColor);
-        color: #ffffff;
+        background-color: ($primaryColor);
+        color: ($pColor1);
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 20px;
-        border-radius: 60px 10px 40px 20px;
+        @include borderRadius(60px 10px 40px 20px);
+        
         z-index: 3;
     }
 }
 .imgMenu{
-    border-radius: 60px 10px 40px 20px;
+    @include borderRadius(60px 10px 40px 20px);
     width: 275px;
     height: 186px;
     animation-name: efectoMenu;
@@ -61,21 +63,21 @@
 
 @keyframes efectoMenu {
     0% {
-        border-radius: 80px 20px 60px 40px;;
+        @include borderRadius(80px 20px 60px 40px);
     }
     25% {
-        border-radius: 100px 40px 80px 60px;
-        background-color: var(--terciaryColor);
+        @include borderRadius(100px 40px 80px 60px);
+        background-color: ($terciaryColor);
     }
     50% {
-        border-radius: 20px 60px 100px 80px;        
+        @include borderRadius(20px 60px 100px 80px); 
     }
     75% {
-        border-radius: 40px 80px 20px 100px;
-        background-color: var(--terciaryColor);
+        @include borderRadius(40px 80px 20px 100px);
+        background-color: ($terciaryColor);
     }
     100% {
-        border-radius: 60px 10px 40px 20px;
+        @include borderRadius(60px 10px 40px 20px);
     }
 }
 #menuFx{
@@ -100,12 +102,12 @@
 }
 .menuPizzas div p{
     text-align: left;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    font-family: $primaryFont;
+    color: ($pColor1);
 }
 .menuPizzas div h2{
-    font-family: 'Roboto', sans-serif;
-    color: var(--primaryColor);
+    font-family: $primaryFont;
+    color: ($primaryColor);
     font-size: 22px;
     text-align: left;
     font-weight: 600;
@@ -137,17 +139,17 @@
     }
 }
 .menuPizzas div h3{
-    font-family: 'Roboto', sans-serif;
-    color: var(--primaryColor);
+    font-family: $primaryFont;
+    color: ($primaryColor);
     font-size: 22px;
     font-weight: 600;
     text-align: right;
 }
-@media  (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
     .imgMenu{
         width: 100%;
         height: auto;
-        border-radius: 40px 5px 20px 10px;
+        @include borderRadius(40px 5px 20px 10px);
     }
     .menuPizzas{
         width:100%;
@@ -164,9 +166,7 @@
         line-height: 23pt;
     }
     .containerPreparadosMenu{
-        position: relative;
-        top: 0px;
-        z-index: 999;
+        margin-top: 200px;
     }
     .containerMenu{
         position: relative;
