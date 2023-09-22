@@ -47,16 +47,17 @@
 }
 .contactoForm{
     z-index: 999;
+    height: 150px;
 }
 .contactoArea{
     display: inline-block;
-    padding: 2px;
+    vertical-align:bottom;
 }
 
 input{
     width:400px;
-    height: 30px;
-    margin-bottom: 10px;
+    height: 31px;
+    margin-bottom: 2px;
     font-family: ($primaryFont);
     font-size: 12px;
     color: ($secondaryColor);
@@ -64,14 +65,15 @@ input{
 }
 textarea {
     width:400px;
-    height: 121px;
-    margin-bottom: -14px;
+    padding-top: 5px;
+    height: 100px;
     font-family: ($primaryFont);
     font-size: 12px;
     color: ($secondaryColor);
     font-weight: bold;
 }
 button{
+    margin-top: 1px;
     float: right;
     background-color: ($primaryColor);
     color: ($pColor1);
